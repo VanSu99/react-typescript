@@ -1,0 +1,20 @@
+====== TypeScript ======
+
+# Props
+- Component nào nhận props thì cần định nghĩa 'type' của các Props.
+
+  type Props = {
+    question: string;
+    answers: string[];
+    callback: any;
+    userAnswer: any;
+    questionNr: number;
+    totalQuestions: number;
+  }
+
+  const QuestionCard: React.FC<Props> = ({ question, answers, callback, userAnswer, questionNr, totalQuestions }) => { //code something }
+
+- nếu mình không truyền đủ props thì IDE sẽ báo lỗi đỏ ngay. Quá tuyệt!
+
+# State
+
